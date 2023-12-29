@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: all ease;
+  /* margin: 0; */
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+hr {
+  color: black;
+}
+/* ---- Header Start ---- */
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  /* border: 1px solid black; */
+}
+.nav-bar h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+.nav-links ol {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+.nav-links a:hover {
+  border-bottom: 2px solid black;
+}
+/* ---- Header End ---- */
+/* ---- Main Content Start ---- */
+.main-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid black; */
+  min-height: 60vh;
+}
+.main-content img {
+  height: 25rem;
+  width: 20rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.main-text-container p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.8rem;
+  color: grey;
+}
+.main-text-container h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+/* ---- Main Content End ---- */
+/* ---- About Section Start ---- */
+section {
+  /* border: 1px solid black; */
+  line-height: 1rem;
+  padding-bottom: 1.5rem;
+}
+.about {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  color: lightgrey;
+  text-shadow: 2px 2px 2px black;
+}
+#ed {
+  margin: 0rem 2rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  /* width: 90%; */
+  padding: 0.5rem;
+  background-color: grey;
+  color: aliceblue;
+  border-radius: 1rem;
+  text-shadow: 2px 2px 2px black;
+}
+/* --- education portion css --- */
+.education {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+.edu {
+  position: relative;
+  overflow: hidden;
+}
+.edu img {
+  display: block;
+  height: 25rem;
+  width: 20rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.edu .text {
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  line-height: 1.5rem;
+  background: rgba(255, 255, 255, 0.4);
+  text-shadow: 3px 3px 3px black;
+  padding-left: 4rem;
+}
+.edu > img,
+.edu > .text {
+  transition: 300ms ease-in-out;
+}
+.edu:hover > .blur {
+  filter: blur(5px);
+}
+.edu > .text.fade {
+  opacity: 0;
+}
+.edu:hover > .text.fade {
+  opacity: 1;
+}
+.edu > .text.slide {
+  transform: translateX(-100%);
+}
+.edu:hover > .text.slide {
+  transform: translateX(0);
+}
+/* --- skills portion css --- */
+.skills {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+.technologies {
+  position: relative;
+  overflow: hidden;
+}
+.technologies img {
+  height: 25rem;
+  width: 35rem;
+  border-radius: 0.5rem;
+}
+.technologies .text {
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  line-height: 1.5rem;
+  background: rgba(255, 255, 255, 0.4);
+  text-shadow: 3px 3px 3px black;
+  padding-left: 4rem;
+}
+.technologies > img,
+.technologies > .text {
+  transition: 300ms ease-in-out;
+}
+.technologies:hover > .blur {
+  filter: blur(5px);
+}
+.technologies > .text.fade {
+  opacity: 0;
+}
+.technologies:hover > .text.fade {
+  opacity: 1;
+}
+.technologies > .text.slide-top {
+  transform: translateY(-100%);
+}
+.technologies:hover > .text.slide-top {
+  transform: translateY(0);
+}
+/* ---- About Section End ---- */
+/* <!-- Experienece Section Start --> */
+.role {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+}
+.text-align {
+  padding: 1rem 4rem;
+  text-align: justify;
+}
+.duration {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+.exp-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: gray;
+}
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.summary {
+  font-size: 1.3rem;
+}
+div {
+  line-height: 2rem;
+}
+.project1,
+.project2,
+.project3 {
+  gap: 2rem;
+}
+.p1-img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 0.2rem 3rem 3rem 0.2rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.p1-img:hover {
+  border: 0.3rem solid #ff8473;
+}
+.p1-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.p2-img {
+  height: 20rem;
+  width: 35rem;
+  border-radius: 2.5rem 0rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.p2-img:hover {
+  border: 0.3rem solid black;
+}
+.p2-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.p3-img {
+  height: 20rem;
+  width: 30rem;
+  border-radius: 0rem 2.5rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.p3-img:hover {
+  border: 0.3rem solid blueviolet;
+}
+.p3-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+/* <!-- Experienece Section Start --> */
+/* --- Contact Section Start --- */
+.form {
+  display: flex;
+  flex-flow: column;
+  gap: 1.5rem;
+  border: 0.1rem solid black;
+  padding: 2rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#message {
+  min-height: 4rem;
+}
+.form-fields {
+  padding: 0.3rem;
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem;
+}
+.form-fields:active {
+  border: 1px solid black;
+  padding: 0.3rem;
+}
+.button {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid grey;
+}
+.button:hover {
+  background-color: #00ffff;
+  border: 0.1rem solid black;
+}
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sm-pic1 {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.sm-pic2 {
+  height: 3rem;
+  width: 3rem;
+}
+.sm-pic3 {
+  height: 3rem;
+  width: 3rem;
+}
+/* --- Contact Section End--- */
+/* --- Footer Section Start ---- */
+.footer-links ol {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  /* padding: 0rem 1rem; */
+}
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+.footer-links a:hover {
+  border-bottom: 2px solid black;
+}
+/* --- Footer Section End ---- */
+
+@media (max-width: 1200px) {
+  .main-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem 0rem;
+  }
+  .education {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .skills {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+  .project1 {
+    display: flex;
+    flex-flow: column;
+  }
+  .project2 {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .project3 {
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media (max-width: 768px) {
+  .main-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem 0rem;
+  }
+  .education {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .skills {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+  .project1 {
+    display: flex;
+    flex-flow: column;
+  }
+  .project2 {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .project3 {
+    display: flex;
+    flex-flow: column;
+  }
+  .nav-links ol {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0rem 2rem;
+  }
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .nav-bar h2 {
+    display: none;
+  }
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+  .main-content img {
+    height: 20rem;
+    width: 15rem;
+  }
+  .main-text-container p,
+  .main-text-container h3 {
+    font-size: 1.2rem;
+  }
+  #ed {
+    font-size: 1.2rem;
+  }
+  .about {
+    font-size: 1.4rem;
+  }
+  .edu img {
+    height: 17rem;
+    width: 14rem;
+  }
+  .text.slide {
+    font-size: 1.2rem;
+  }
+  .technologies img {
+    height: 15rem;
+    width: 19rem;
+  }
+  .text.slide-top {
+    font-size: 1.2rem;
+  }
+  .role {
+    font-size: 1rem;
+  }
+  .duration {
+    font-size: 1rem;
+  }
+  .exp-text {
+    font-size: 1rem;
+  }
+  .projects p {
+    font-size: 1rem;
+  }
+  .p1-img {
+    height: 15rem;
+    width: 15rem;
+  }
+  .p2-img {
+    height: 12rem;
+    width: 20rem;
+  }
+  .p3-img {
+    height: 13rem;
+    width: 20rem;
+  }
+  .footer-links a {
+    font-size: 1.2rem;
+  }
+  /* .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  } */
+}
